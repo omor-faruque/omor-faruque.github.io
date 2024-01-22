@@ -146,6 +146,10 @@ a {
 .mobile-menu {
     display: none;
 }
+.mobile-menu img {
+    position: relative;
+    top: 2px;
+}
 
 @media (max-width: 690px) {
     .left-menu {
