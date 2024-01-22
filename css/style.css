@@ -87,6 +87,9 @@ a {
     position: relative;
 }
 
+.d-none {
+    display: none;
+}
 
 
 /* padding */
@@ -101,7 +104,9 @@ a {
 .pr-8 {
     padding-right: 8px;
 }
-
+.pr-24 {
+    padding-right: 24px;
+}
 .pr-32 {
     padding-right: 32px;
 }
