@@ -7,33 +7,54 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="container pt-24 pb-24">
-        <div class="row justify-content-center">
-            <div class="text-align-center left-menu">
-                <div class="container">
+    <!-- header -->
+    <header class="container pt-24 pb-24 bd">
+        <div class="row justify-content-space-between">
+            <div class="left-menu">
+                <div class="container pl-12">
                     <img class="avatar" src="/images/avatar.png" alt="Avatar">&nbsp;OMOR FARUQUE
 
                 </div>
             </div>
             <div class="text-align-right right-menu">
-                <div class="desktop-menu">
+                <div class="desktop-menu pr-12">
                     <a href="#" target="_blank" class="pl-24"><span class="menu-no">01.</span>About</a>
                     <a href="#" target="_blank" class="pl-24" ><span class="menu-no">02.</span>Experience</a>
                     <a href="#" target="_blank" class="pl-24"><span class="menu-no">03.</span>Work</a>
-                    <a href="#" target="_blank" class="pl-24 pr-32"><span class="menu-no">04.</span>Contact</a>
+                    <a href="#" target="_blank" class="pl-24"><span class="menu-no">04.</span>Contact</a>
                 </div>
 
                 <div class="mobile-menu">
-                    <div class="header__main-ham-menu-cont pr-24">
-                        <img src="/images/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu">
-                        <img src="/images/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none">
+                    <div class="row justify-content-right header__main-ham-menu-cont pr-16" onclick="menuToggle()">
+                        <img src="/images/ham-menu.svg" alt="hamburger menu" id="menu-open" class="header__main-ham-menu">
+                        <img src="/images/ham-menu-close.svg" alt="hamburger menu close" id="menu-close" class="header__main-ham-menu-close d-none">
                       </div>
                 </div>
 
             </div>
-        </div>
+
+            <div class="position-relative w-100">
+                <div id="menu-content" class="ham-menu-content col-12 w-100 d-none">
+                    <a href="#" target="_blank">About</a>
+                    <a href="#" target="_blank">Experience</a>
+                    <a href="#" target="_blank">Work</a>
+                    <a href="#" target="_blank">Contact</a>
+                  </div>
+            </div>
+            </div>
+
+
+       
     </header>
 
+    <!-- HOME HERO -->
+
+    <div class="container text-transform-uppercase home-hero text-align-center bd">
+        <h2 class="intro-heading">HI, I am OMOR FARUQUE</h2>
+        <p>Software Engineer, Fullstack Developer</p>
+    </div>
+
+    <script src="/js/script.js"></script>
    
 </body>
 </html>
