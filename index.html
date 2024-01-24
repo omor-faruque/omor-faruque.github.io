@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="container pt-24 pb-24 bd">
+    <header class="container pt-24 pb-24">
         <div class="row justify-content-space-between">
             <div class="left-menu">
                 <div class="container pl-12">
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="mobile-menu">
-                    <div class="row justify-content-right header__main-ham-menu-cont pr-16" onclick="menuToggle()">
+                    <div class="row justify-content-right header__main-ham-menu-cont pr-16" onclick="toggleMenu()">
                         <img src="/images/ham-menu.svg" alt="hamburger menu" id="menu-open" class="header__main-ham-menu">
                         <img src="/images/ham-menu-close.svg" alt="hamburger menu close" id="menu-close" class="header__main-ham-menu-close d-none">
                       </div>
@@ -33,7 +33,7 @@
 
             </div>
 
-            <div class="position-relative w-100">
+            <div class="position-relative w-100" id="mobile-menu">
                 <div id="menu-content" class="ham-menu-content col-12 w-100 d-none">
                     <a href="#" target="_blank">About</a>
                     <a href="#" target="_blank">Experience</a>
@@ -49,13 +49,26 @@
 
     <!-- HERO BODY -->
 
-    <div class="container row text-transform-uppercase home-hero text-align-center bd">
-        <div>
+    <div class="container row text-transform-uppercase home-hero text-align-center display-mobile ">
+        <div class="pl-12 pr-12">
             <h2 class="intro-heading">HI, I am OMOR FARUQUE</h2>
             <p>Software Engineer, Fullstack Developer</p>
         </div>
 
     </div>
+
+
+    <div class="container row text-transform-uppercase home-hero text-align-center display-desktop">
+        <div class="hero-content">
+            <h2 class="intro-heading">OMOR FARUQUE</h2>
+            <h2 class="intro-heading">OMOR FARUQUE</h2>
+            <p>Software Engineer, Fullstack Developer</p>
+        </div>
+        
+
+    </div>
+
+    
 
     <script src="/js/script.js"></script>
    
