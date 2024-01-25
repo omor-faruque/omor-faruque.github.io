@@ -175,6 +175,11 @@ a {
 .pl-24 {
     padding-left: 24px;
 }
+
+.bb {
+    border-bottom: 1px solid var(--black);
+}
+
 .display-mobile {
     display: none;
 }
@@ -196,7 +201,6 @@ a {
 }
 
 /*---------- HEADER CSS ----------*/
-
 .left-menu {
     flex: 0 0 24.5%;
     max-width: 24.5%;
@@ -242,10 +246,6 @@ a {
     border-bottom: 1px solid var(--grey);
     padding: 16px;
     text-align: right;
-}
-
-.ham-menu-content a:first-child {
-    border-top: 1px solid var(--grey);
 }
 
 @media (max-width: 690px) {
