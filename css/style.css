@@ -133,6 +133,10 @@ a {
     position: relative;
 }
 
+.position-absolute {
+    position: absolute;
+}
+
 .position-fixed {
     position: fixed;
 }
@@ -154,6 +158,9 @@ a {
 }
 
 /* padding */
+.p-16 {
+    padding: 16px;
+}
 .pt-24 {
     padding-top: 24px;
 }
@@ -188,6 +195,10 @@ a {
 
 .pl-12 {
     padding-left: 12px;
+}
+
+.pl-16 {
+    padding-left: 16px;
 }
 
 .pl-24 {
@@ -382,7 +393,9 @@ footer {
         height: 40vh;
     }
 }
-
+.hero-social {
+    left: 0;
+}
 
 
 /*---------- SCROLL DOWN CSS ----------*/
