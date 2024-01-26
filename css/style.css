@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand|Rubik|Bungee|Bungee Shade|Bungee Inline|Roboto Slab|Patua One|Faster One|Open Sans|Cabin|Poppins');
+
+
 :root {
     --white: #fff;
     --grey: #999;
@@ -8,6 +11,7 @@
 * {
     margin: 0;
     padding: 0;
+    letter-spacing: .5px;
 }
 
 html {
@@ -34,8 +38,17 @@ body {
 
 
 @media (max-width: 690px) {
-    html, body {
+
+    html,
+    body {
         font-size: 14px;
+    }
+}
+@media (max-width: 350px) {
+
+    html,
+    body {
+        font-size: 10px;
     }
 }
 
@@ -120,6 +133,10 @@ a {
     position: relative;
 }
 
+.position-fixed {
+    position: fixed;
+}
+
 .d-none {
     display: none;
 }
@@ -131,6 +148,7 @@ a {
 .w-100 {
     width: 100%;
 }
+
 .h-100 {
     height: 100%;
 }
@@ -201,6 +219,12 @@ a {
 }
 
 /*---------- HEADER CSS ----------*/
+
+header {
+    background-color: var(--white);
+    z-index: 1;
+}
+
 .left-menu {
     flex: 0 0 24.5%;
     max-width: 24.5%;
@@ -288,14 +312,15 @@ footer {
 }
 
 @media (min-width: 690px) {
-.footer-content .right-box {
-    text-align: right;
+    .footer-content .right-box {
+        text-align: right;
+    }
 }
-}
+
 /*---------- HERO CONTENT CSS ----------*/
 
 .home-hero {
-    height: 60vh;
+    height: 80vh;
     align-items: center;
     justify-content: center;
 }
@@ -306,72 +331,68 @@ footer {
 
 .hero-content {
     position: relative;
-  }
-  
-  .hero-content h2 {
+}
+
+.hero-content h2 {
     font-size: 5em;
-  }
-  
-  .hero-content h2:nth-child(1) {
+}
+
+.hero-content h2:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px var(--black);
-  }
-  
-  .hero-content h2:nth-child(2) {
+}
+
+.hero-content h2:nth-child(2) {
     color: var(--black);
     animation: animate 4s ease-in-out infinite;
     position: absolute;
     top: 0;
-  }
-  
-  @keyframes animate {
+}
+
+@keyframes animate {
+
     0%,
     100% {
-      clip-path: polygon(
-        0% 45%,
-        16% 44%,
-        33% 50%,
-        54% 60%,
-        70% 61%,
-        84% 59%,
-        100% 52%,
-        100% 100%,
-        0% 100%
-      );
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
     }
-  
+
     50% {
-      clip-path: polygon(
-        0% 60%,
-        15% 65%,
-        34% 66%,
-        51% 62%,
-        67% 50%,
-        84% 45%,
-        100% 46%,
-        100% 100%,
-        0% 100%
-      );
-    }
-  }
-  
-  @media (max-width: 690px) {
-    .home-hero {
-        height: 30vh;
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
     }
 }
-  
+
+@media (max-width: 690px) {
+    .home-hero {
+        height: 40vh;
+    }
+}
+
+
+/*---------- ABOUT ME CSS ----------*/
+.aboutme-header {
+    font-size: 2.5rem;
+}
 
 
 
-  
 
 /*---------- DEBUG CSS ----------*/
 .bd {
     border: 1px solid gray;
 }
-
-
-
-
-
