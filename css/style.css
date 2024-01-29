@@ -109,6 +109,9 @@ a {
 
 
 /*---------- UTILITY CSS ----------*/
+.fw-600 {
+    font-weight: 600;
+}
 .justify-content-center {
     justify-content: center;
 }
@@ -169,6 +172,9 @@ a {
     padding-top: 24px;
 }
 
+.pb-16 {
+    padding-bottom: 16px;
+}
 .pb-24 {
     padding-bottom: 24px;
 }
