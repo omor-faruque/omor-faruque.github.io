@@ -1,3 +1,5 @@
+const contentUrl = "../content/data.json";
+
 function toggleMenu() {
   let x = document.getElementById("menu-content");
   let openIcon = document.getElementById("menu-open");
@@ -40,9 +42,35 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initial check on page load
   checkWindowWidth();
 
+  // load page contents
+  updatePageContent();
+
   // Add resize event listener
   window.addEventListener('resize', function () {
     checkWindowWidth();
   });
 
 });
+
+
+function updatePageContent() {
+  fetch(contentUrl)
+  .then(response => response.json())
+  .then(data => {
+    updateSkills(data.skills);
+  })
+  .catch(error => {
+    console.error('Error fetching JSON:', error);
+  })
+}
+
+
+function updateSkills(skillsArray) {
+  const skillsDiv = document.getElementById('skills');
+  skillsArray.forEach(skill => {
+    const skillElement = document.createElement('div');
+    skillElement.textContent = skill;
+    skillsDiv.appendChild(skillElement);
+  });
+
+}
