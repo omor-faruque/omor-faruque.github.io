@@ -53,9 +53,10 @@ body {
 }
 
 a {
-    color: var(--black);
     text-decoration: none;
 }
+
+
 
 .container {
     width: 100%;
@@ -109,6 +110,7 @@ a {
 
 
 /*---------- UTILITY CSS ----------*/
+
 .fw-600 {
     font-weight: 600;
 }
@@ -246,6 +248,9 @@ a {
     margin-bottom: 36px;
 }
 
+.ml-12 {
+    margin-left: 12px;
+}
 .ml-16 {
     margin-left: 16px;
 }
@@ -254,6 +259,10 @@ a {
 }
 .ml-32 {
     margin-left: 32px;
+}
+
+.mr-12 {
+    margin-right: 12px;
 }
 
 .bb {
@@ -291,7 +300,9 @@ header {
     background-color: var(--white);
     z-index: 1;
 }
-
+header a {
+    color: var(--black);
+}
 .left-menu {
     flex: 0 0 24.5%;
     max-width: 24.5%;
@@ -367,15 +378,37 @@ header {
 /*---------- FOOTER CSS ----------*/
 
 footer {
-    height: 35vh;
+    height: auto;
     background-color: var(--black);
     color: var(--white);
+    padding: 70px 0;
+}
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}
+.footer-heading {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+.footer-desc {
+    font-size: .85rem;
 }
 
 .footer-content {
     height: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey);
+    margin-bottom: 36px;
+}
+.footer-icon img {
+    width: 25px;
+}
+
+.copy-right {
+    text-align: center;
+    color: var(--white);
+    font-size: .8rem;
 }
 
 @media (min-width: 690px) {
