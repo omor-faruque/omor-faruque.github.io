@@ -583,7 +583,10 @@ footer a {
     border: 1px solid black;
     margin-right: 12px;
     margin-bottom: 12px;
+}
 
+.skills-container img {
+    vertical-align: middle;
 }
 
 @media (max-width: 690px) {

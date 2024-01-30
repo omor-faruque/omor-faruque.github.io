@@ -41,9 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Initial check on page load
   checkWindowWidth();
 
-  // load page contents
-  updatePageContent();
-
   // Add resize event listener
   window.addEventListener('resize', function () {
     checkWindowWidth();
@@ -63,15 +60,5 @@ function updatePageContent() {
     })
 }
 
-
-function updateSkills(skillsArray) {
-  const skillsDiv = document.getElementById('skills');
-  skillsArray.forEach(skill => {
-    const skillElement = document.createElement('div');
-    skillElement.textContent = skill;
-    skillsDiv.appendChild(skillElement);
-  });
-
-}
 
 
