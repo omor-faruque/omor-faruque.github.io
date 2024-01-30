@@ -38,7 +38,6 @@ function checkWindowWidth() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-
   // Initial check on page load
   checkWindowWidth();
 
@@ -55,13 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function updatePageContent() {
   fetch(contentUrl)
-  .then(response => response.json())
-  .then(data => {
-    updateSkills(data.skills);
-  })
-  .catch(error => {
-    console.error('Error fetching JSON:', error);
-  })
+    .then(response => response.json())
+    .then(data => {
+      updateSkills(data.skills);
+    })
+    .catch(error => {
+      console.error('Error fetching JSON:', error);
+    })
 }
 
 
@@ -74,3 +73,5 @@ function updateSkills(skillsArray) {
   });
 
 }
+
+
